@@ -7,7 +7,7 @@ on:
 jobs:
   build-push-images:
     name: Build and push image to GHCR
-    runs-on: alpine-latest
+    runs-on: ubuntu-latest
 
     steps:
 
