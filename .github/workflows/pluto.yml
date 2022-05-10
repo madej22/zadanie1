@@ -37,7 +37,7 @@ jobs:
           platforms: linux/amd64,linux/arm64/v8,linux/arm/v7
           file: ./Dockerfile
           push: true
-          tags: madej22/zadanie1:zad1
+          tags: madej22/github:zad1
           labels: ${{ steps.meta.outputs.labels }}
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,mode=max,dest=/tmp/.buildx-cache-new
