@@ -45,7 +45,7 @@ app.get('/', function(req, res)
     ip = ip[ip.length-1]
 
     // Załadowanie pliku JSON z informacjami na temat adresu IP klienta
-    loadJSON("http://ip-api.com/json/89.186.17.59", function(datetime)
+    loadJSON(`http://ip-api.com/json/${ip}`, function(datetime)
     {
         // Jeżeli udało się zdobyć informacje o adresie IP...
         if (datetime != null)
